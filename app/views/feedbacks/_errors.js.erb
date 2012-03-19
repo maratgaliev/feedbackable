@@ -1,0 +1,1 @@
+$("#new_feedback-notice").html('<div><%= escape_javascript(@feedback.errors.map {|k,v| "#{k.to_s.titleize} #{v}"}.join('<br/>')).html_safe %></div>');
